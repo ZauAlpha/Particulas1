@@ -43,6 +43,7 @@
             this.PICTURE_BOX.Size = new System.Drawing.Size(867, 545);
             this.PICTURE_BOX.TabIndex = 0;
             this.PICTURE_BOX.TabStop = false;
+            this.PICTURE_BOX.Click += new System.EventHandler(this.PICTURE_BOX_Click);
             // 
             // TIMER
             // 
@@ -59,6 +60,7 @@
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.Resize += new System.EventHandler(this.Form1_Resize);
             ((System.ComponentModel.ISupportInitialize)(this.PICTURE_BOX)).EndInit();
             this.ResumeLayout(false);
 

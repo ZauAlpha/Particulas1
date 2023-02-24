@@ -22,20 +22,7 @@ namespace Particulas
         private float changeAlpha;
         private int initialAlpha;
         
-        public Particle(float x, float y, float radio)
-        {
-            this.x = x;
-            this.y = y;
-            var random = new Random();
-            this.radio= radio;
-            color = Color.FromArgb(random.Next(255), random.Next(255), random.Next(255), random.Next(255));
-            speedX = random.Next();
-            speedY = random.Next();
-            time = random.Next();
-            speedX = 0.2f;
-            speedY = 0.2f;
-
-        }
+        
         public Particle(float x, float y)
         {
             
@@ -45,7 +32,7 @@ namespace Particulas
             color = Color.FromArgb(initialAlpha, random.Next(10)+135, random.Next(57)+191, random.Next(20)+235);
             speedX = 0;
             speedY = random.Next(4)+1;
-            time = random.Next(75)+25;
+            time = random.Next(50)+50;
             changeAlpha = color.A / time;
             this.initialX = this.x = x-radio;
             this.initialY = this.y = y-radio;
